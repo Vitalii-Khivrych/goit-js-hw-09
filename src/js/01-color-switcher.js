@@ -1,17 +1,18 @@
 const refs = {
   startBtn: document.querySelector('button[data-start]'),
   stopBtn: document.querySelector('button[data-stop]'),
+  body: document.querySelector('body'),
 };
 
 let timerId = null;
-
+//
 refs.startBtn.addEventListener('click', onStartBtnClick);
 refs.stopBtn.addEventListener('click', onStopBtnClick);
 
 refs.stopBtn.setAttribute('disabled', true);
 
 function onStartBtnClick() {
-  document.body.style.backgroundColor = `${getRandomHexColor()}`;
+  refs.body.style.backgroundColor = `${getRandomHexColor()}`;
 
   chengeDisabledBtn();
 
