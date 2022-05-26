@@ -1,9 +1,10 @@
 .timer {
   text-align: center;
   height: 130px;
-  width: 50%;
+  width: 470px;
   margin: 0 auto;
   background: rgba(196, 196, 196, 0.8);
+  border-radius: 10px;
   cursor: default;
 }
 
